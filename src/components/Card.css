@@ -1,0 +1,104 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 0.5rem 1.2rem;
+  background-color: var(--card-color, #f0f0f0);
+  border-radius: 1.5rem;
+  box-shadow:
+    0 4px 0 rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  min-height: 150px;
+  outline: none;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.card:active,
+.card:focus-visible {
+  transform: scale(0.94) translateY(2px);
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.15),
+    0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+.card__media {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card__emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.card__label {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.01em;
+}
+
+.card__photo-btn {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+  padding: 0;
+}
+
+.card:hover .card__photo-btn,
+.card:focus-within .card__photo-btn {
+  opacity: 1;
+}
+
+.card__file-input {
+  display: none;
+}
+
+/* Larger media area on bigger screens */
+@media (min-width: 400px) {
+  .card__media {
+    width: 90px;
+    height: 90px;
+  }
+
+  .card__emoji {
+    font-size: 4rem;
+  }
+}
