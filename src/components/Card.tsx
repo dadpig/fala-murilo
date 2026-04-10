@@ -31,7 +31,6 @@ export function Card({ card, language, onSpeak }: Props) {
     reader.onload = (evt) => {
       const dataUrl = evt.target?.result as string
       localStorage.setItem(storageKey, dataUrl)
-      // Notify CommunicationBoard to increment storageVersion
       window.dispatchEvent(new StorageEvent('storage', { key: storageKey, newValue: dataUrl }))
     }
     reader.readAsDataURL(file)

@@ -18,7 +18,6 @@ function loadLanguage(): Language {
 
 export function CommunicationBoard() {
   const [language, setLanguage] = useState<Language>(loadLanguage)
-  // Increments when a photo changes, forcing Card to re-read localStorage
   const [storageVersion, setStorageVersion] = useState(0)
   const { speak } = useSpeech(language)
 

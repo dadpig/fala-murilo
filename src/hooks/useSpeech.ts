@@ -19,7 +19,6 @@ export function useSpeech(language: Language) {
       utterance.pitch = 1.1
       utterance.volume = 1
 
-      // Pick best available voice for this language
       const voices = window.speechSynthesis.getVoices()
       const langPrefix = language.slice(0, 2)
       const match =
