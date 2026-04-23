@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100B25B8A730755B6125468C /* SpeechEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129BED45CD49EEC5AC1BF1FD /* SpeechEngine.swift */; };
+		27B78FD49C6E9379E032612D /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04E97D27A3A87E8AEB4A61B /* CardItem.swift */; };
+		31077703806B4C0F05C78BA6 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C414B28639C26717C0258B06 /* VoiceRecorderView.swift */; };
+		3ACA879DFE7016AC4764A196 /* CardEditorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D4DE839F32DD75B89F0182 /* CardEditorRow.swift */; };
+		5DCAE925A0D245E6F6B6CB48 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9E5CD1A9DF5DB20857A1AE /* AboutView.swift */; };
+		7487CCB8717FA75DB2A3EA8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EA68414B8B3D9F2CE815A2 /* ContentView.swift */; };
+		77A265BD53CDC2A558FA7FF4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1869D46645DA84B47DC601 /* AppLanguage.swift */; };
+		8B05A6198864DE690DB3310B /* FalaMuriloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD6FE32ECFDD2D930AFD9A2 /* FalaMuriloApp.swift */; };
+		9D6AD9F08EF9760D9271984B /* PreferencesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC58C5D128F269FDA812046C /* PreferencesSheet.swift */; };
+		BC6201CD3068C07F81CC0332 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29BBD6C07FA138CDB8D5F1 /* CardView.swift */; };
+		CD931DDF951ED523D017D31D /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061A371D9B4A942DDF8A4FB3 /* AudioRecorder.swift */; };
+		F0636497DD11C9B3C98B9A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A016D9E90FEADA90B98FEE9 /* Assets.xcassets */; };
+		FDF201ECCF290F92EE0A3CE4 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907EDAA80056902E07B008A3 /* CardStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061A371D9B4A942DDF8A4FB3 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		0B9E5CD1A9DF5DB20857A1AE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		129BED45CD49EEC5AC1BF1FD /* SpeechEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechEngine.swift; sourceTree = "<group>"; };
+		4A016D9E90FEADA90B98FEE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63D4DE839F32DD75B89F0182 /* CardEditorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEditorRow.swift; sourceTree = "<group>"; };
+		64F1D5BE2E151E616FDDE7E1 /* Fala, Murilo!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fala, Murilo!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66EA68414B8B3D9F2CE815A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		907EDAA80056902E07B008A3 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
+		AE1869D46645DA84B47DC601 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		BC58C5D128F269FDA812046C /* PreferencesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSheet.swift; sourceTree = "<group>"; };
+		BF29BBD6C07FA138CDB8D5F1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C04E97D27A3A87E8AEB4A61B /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		C414B28639C26717C0258B06 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
+		CDD6FE32ECFDD2D930AFD9A2 /* FalaMuriloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FalaMuriloApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		171E7E00CBCD2B50F4E4E5DA /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				061A371D9B4A942DDF8A4FB3 /* AudioRecorder.swift */,
+				129BED45CD49EEC5AC1BF1FD /* SpeechEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		219E484F2D58B8A0D30DA38E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B9E5CD1A9DF5DB20857A1AE /* AboutView.swift */,
+				63D4DE839F32DD75B89F0182 /* CardEditorRow.swift */,
+				BF29BBD6C07FA138CDB8D5F1 /* CardView.swift */,
+				BC58C5D128F269FDA812046C /* PreferencesSheet.swift */,
+				C414B28639C26717C0258B06 /* VoiceRecorderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5957323029E8983166A3EF1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE1869D46645DA84B47DC601 /* AppLanguage.swift */,
+				C04E97D27A3A87E8AEB4A61B /* CardItem.swift */,
+				907EDAA80056902E07B008A3 /* CardStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		609A125607DCF487ECAF9AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64F1D5BE2E151E616FDDE7E1 /* Fala, Murilo!.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B85A1D91867ABFD9DEBB19E = {
+			isa = PBXGroup;
+			children = (
+				A86F6ECF9E3401F020CEF1CA /* FalaMuriloIOS */,
+				609A125607DCF487ECAF9AED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A86F6ECF9E3401F020CEF1CA /* FalaMuriloIOS */ = {
+			isa = PBXGroup;
+			children = (
+				171E7E00CBCD2B50F4E4E5DA /* Engine */,
+				5957323029E8983166A3EF1E /* Models */,
+				219E484F2D58B8A0D30DA38E /* Views */,
+				4A016D9E90FEADA90B98FEE9 /* Assets.xcassets */,
+				66EA68414B8B3D9F2CE815A2 /* ContentView.swift */,
+				CDD6FE32ECFDD2D930AFD9A2 /* FalaMuriloApp.swift */,
+			);
+			path = FalaMuriloIOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044EF4CFDD5F7110DEF330E3 /* FalaMuriloIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B751422EC8CB628CED09039 /* Build configuration list for PBXNativeTarget "FalaMuriloIOS" */;
+			buildPhases = (
+				9606BE8A85D67C41DE28AFA2 /* Sources */,
+				9DEE36F031D52B7087E9F1FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FalaMuriloIOS;
+			packageProductDependencies = (
+			);
+			productName = FalaMurilo;
+			productReference = 64F1D5BE2E151E616FDDE7E1 /* Fala, Murilo!.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3287A17CDB4EA978FD896EF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					044EF4CFDD5F7110DEF330E3 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF903524594F0C55A2AB7060 /* Build configuration list for PBXProject "FalaMuriloIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8B85A1D91867ABFD9DEBB19E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 609A125607DCF487ECAF9AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044EF4CFDD5F7110DEF330E3 /* FalaMuriloIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DEE36F031D52B7087E9F1FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0636497DD11C9B3C98B9A1E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9606BE8A85D67C41DE28AFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCAE925A0D245E6F6B6CB48 /* AboutView.swift in Sources */,
+				77A265BD53CDC2A558FA7FF4 /* AppLanguage.swift in Sources */,
+				CD931DDF951ED523D017D31D /* AudioRecorder.swift in Sources */,
+				3ACA879DFE7016AC4764A196 /* CardEditorRow.swift in Sources */,
+				27B78FD49C6E9379E032612D /* CardItem.swift in Sources */,
+				FDF201ECCF290F92EE0A3CE4 /* CardStore.swift in Sources */,
+				BC6201CD3068C07F81CC0332 /* CardView.swift in Sources */,
+				7487CCB8717FA75DB2A3EA8D /* ContentView.swift in Sources */,
+				8B05A6198864DE690DB3310B /* FalaMuriloApp.swift in Sources */,
+				9D6AD9F08EF9760D9271984B /* PreferencesSheet.swift in Sources */,
+				100B25B8A730755B6125468C /* SpeechEngine.swift in Sources */,
+				31077703806B4C0F05C78BA6 /* VoiceRecorderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F74E170F37C357C8C9251C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2F64D6A10A4EAC8B772782FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fala, Murilo!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Grave sua voz para personalizar cada cartão de comunicação.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tairone.falamurilo;
+				PRODUCT_NAME = "Fala, Murilo!";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EC65DE2E21AC93D0CEFF374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F16C266301746CE4EE7C6302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fala, Murilo!";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Grave sua voz para personalizar cada cartão de comunicação.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tairone.falamurilo;
+				PRODUCT_NAME = "Fala, Murilo!";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B751422EC8CB628CED09039 /* Build configuration list for PBXNativeTarget "FalaMuriloIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F64D6A10A4EAC8B772782FB /* Debug */,
+				F16C266301746CE4EE7C6302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF903524594F0C55A2AB7060 /* Build configuration list for PBXProject "FalaMuriloIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EC65DE2E21AC93D0CEFF374 /* Debug */,
+				0F74E170F37C357C8C9251C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3287A17CDB4EA978FD896EF7 /* Project object */;
+}
